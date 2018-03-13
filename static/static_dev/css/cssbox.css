@@ -1,0 +1,98 @@
+/* The work below, CSSBox, is released under the Creative Commons
+   Attribution-SharAlike 4.0 license and is available on
+   https://notabug.org/SylvieLorxu/CSSBox. You are not required to add
+   additional credit to your website, just leave the above text in this file */
+div.cssbox {
+  margin: 1% 4% 3% 3%;
+  /*box-shadow: 1px 1px 4px 3px rgba(255, 190, 174, 0.4);*/
+  display: inline-block;
+}
+
+span.cssbox_full {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s linear;
+}
+
+span.cssbox_full img {
+  position: fixed;
+  background-color: white;
+  margin-top: 3%;
+  padding: 0;
+  max-height: 90%;
+  max-width: 90%;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px black;
+}
+
+a.cssbox_close,
+a.cssbox_prev,
+a.cssbox_next {
+  position: fixed;
+  text-decoration: none;
+  visibility: hidden;
+  color: #ff002e;
+  font-size: 36px;
+}
+
+a.cssbox_close {
+  top: 18%;
+  right: 2%;
+}
+
+a.cssbox_close::after {
+  content: '\00d7';
+}
+
+a.cssbox_prev,
+a.cssbox_next {
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+a.cssbox_prev {
+  left: 5%;
+}
+
+a.cssbox_next {
+  right: 5%;
+}
+
+a:target ~ a.cssbox_close,
+a:target ~ a.cssbox_prev,
+a:target ~ a.cssbox_next {
+  visibility: visible;
+}
+
+a:target > img.cssbox_thumb + span.cssbox_full {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
+}
+
+span.cssbox_full {
+  cursor: initial;
+}
+/* This is the end of CSSBox */
+
+.back-gallery{
+  /*box-shadow: #26b864 5px;*/
+  padding: 5% 0% 4% 0%;
+  margin: 0% 3% 0% 3%;
+  background-color: rgba(94, 94, 90, 0.11);
+}
+.cssbox_thumb:hover{
+  transform: scale(1.15, 1.15);
+}
+.cssbox_thumb {
+  transition: 0.4s;
+}

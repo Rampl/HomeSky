@@ -1,0 +1,36 @@
+
+{% load staticfiles %}
+<meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <title>Sprint Bootstrap Website Design</title>
+    <meta name="description" content="">
+<!--
+
+
+
+-->
+    <meta name="viewport" content="width=device-width">
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/normalize.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/animate.css" %}">
+    <link rel="stylesheet" href="{% static "css/templatemo_misc.css" %}">
+    <link rel="stylesheet" href="{% static "css/templatemo_style.css" %}">
+
+    <script src="{% static "js/vendor/modernizr-2.6.2.min.js" %}"></script>
+{% block content %}
+
+ <div class="panel panel-success">
+
+    <h2 class="panel-title"></h2>
+  </div>
+  <div class="panel-body">
+<div class="well well-lg" align="center">
+    <h3>Спасибо, Ваше сообщение отправлено!</h3>
+    <div align="center"><a href="/"><button type="button" class="btn btn-info">Вернутся на главную</button></a></div>
+  </div>
+</div>
+{% endblock %}

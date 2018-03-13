@@ -1,0 +1,366 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+
+    <div class="site-slider">
+
+        <ul class="bxslider">
+            <li>
+                <img src="{% static "images/slider/slide6.jpg" %}" alt="slider image 1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-right">
+                            <div class="slider-caption">
+                                <h2>Быстрая установка</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="{% static "images/slider/slide7.jpg" %}" alt="slider image 2">
+                <div class="container caption-wrapper">
+                    <div class="slider-caption">
+                        <h2>Простота в уходе</h2>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="{% static "images/slider/slide8.jpg" %}" alt="slider image 3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-right">
+                            <div class="slider-caption">
+                                <h2>Влагозащита</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="{% static "images/slider/slide9.jpg" %}" alt="slider image 4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-right">
+                            <div class="slider-caption">
+                                <h2>Выравнивания поверхностей</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="{% static "images/slider/slide10.jpg" %}" alt="slider image 5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-right">
+                            <div class="slider-caption">
+                                <h2>Тепло и звукоизоляция</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul> <!-- /.bxslider -->
+        <div class="bx-thumbnail-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="bx-pager">
+                            <a data-slide-index="0" href=""><img src="{% static "images/slider/thumb1.jpg" %}"
+                                                                 alt="image 1"/></a>
+                            <a data-slide-index="1" href=""><img src="{% static "images/slider/thumb2.jpg" %}"
+                                                                 alt="image 2"/></a>
+                            <a data-slide-index="2" href=""><img src="{% static "images/slider/thumb3.jpg" %}"
+                                                                 alt="image 3"/></a>
+                            <a data-slide-index="3" href=""><img src="{% static "images/slider/thumb4.jpg" %}"
+                                                                 alt="image 4"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /.site-slider -->
+
+    <div id="services" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="service-item">
+                        <span class="service-icon first"></span>
+                        <h3>Продукция</h3>
+                        <p>Лидером рынка натяжных потолков остаются европейские производители, заслужившие хорошую
+                            репутацию безупречным качеством, инновациями и стремлением к экологически чистым
+                            технологиям.</p>
+                    </div> <!-- /.service-item -->
+                </div> <!-- /.col-md-3 -->
+
+                <div class="col-md-3 col-sm-6 ">
+                    <div class="service-item">
+                        <span class="service-icon third"></span>
+                        <h3>Высокое качество</h3>
+                        <p>Мы используем только качественные материаллы! Все используемые материаллы отличаются высоким
+                            качеством, что несомненно сказывается на долговечности и безопасности устанавлеваемых
+                            потолков.</p>
+                    </div> <!-- /.service-item -->
+                </div> <!-- /.col-md-3 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="service-item">
+                        <span class="service-icon fourth"></span>
+                        <h3>Профессионализм</h3>
+                        <p>Профессионалы в своем деле! Мы установили не одну сотню потолков, профессиональная бригада
+                            быстро и качественно выполнит все работы по установке потолков.</p>
+                    </div> <!-- /.service-item -->
+                </div> <!-- /.col-md-3 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="service-item">
+                        <span class="service-icon second"></span>
+                        <h3>Низкие цены</h3>
+                        <p>Какой же подарок сделать самому себе? Мы знаем ответ! Закажите наши натяжные потолки по низкой цене, и ваша квартира приобретёт совершенно иной вид!</p>
+                    </div> <!-- /.service-item -->
+                </div> <!-- /.col-md-3 -->
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div> <!-- /#services -->
+    <div id="contact" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="section-title">Связь с нами</h1>
+                </div> <!-- /.col-md-12 -->
+            </div> <!-- /.row -->
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8 text-center bigger-text">
+                    <h4>Оставьте заявку на звонок.</h4>
+                    <h4>Или позвоните нам по номеру <p class="number phone">+79013631329</p></h4>
+                </div>
+                {#                <div class="col-md-6 col-sm-6">#}
+                {#                    <div id="map">#}
+                {#                    </div>#}
+                {#                </div> <!-- /.col-md-6 -->#}
+                {#                <div class="col-md-6 col-sm-6">#}
+                {#                    <div class="row contact-form">#}
+                {#                        <form action="{% url 'contact' %}" method="post">#}
+                {#                            {% csrf_token %}#}
+                {#                                {% bootstrap_form form %}#}
+                {#                            {{ form.non_field_errors }}#}
+                {#                             <fieldset class="col-md-6 col-sm-6">#}
+                {#                                <label for="id_subject">Тема:</label>#}
+                {#                                {{ form.subject.errors }}#}
+                {#                                	  {{ form.subject }}#}
+                {#                                <input class="form-control" id="id_subject" name="subject" placeholder="Тема">#}
+                {#                             </fieldset>#}
+                {#                            &nbsp;#}
+                {#                            <fieldset class="col-md-6 col-sm-6">#}
+                {#                                <label for="id_sender">E-mail:</label>#}
+                {#                                {{ form.sender.errors }}#}
+                {#                                	  {{ form.sender }}#}
+                {#                                <input class="form-control" id="id_sender" name="sender" placeholder="Ваш e-mail">#}
+                {#                            </fieldset>#}
+                {#                            &nbsp;#}
+                {#                            <fieldset class="col-md-12">#}
+                {#                                <label for="id_message">Сообщение:</label>#}
+                {#                                {{ form.message.errors }}#}
+                {#                                	  {{ form.message }}#}
+                {#                                <textarea class="form-control" id="id_message" name="message"#}
+                {#                                          placeholder="Введите ваше сообщение"></textarea>#}
+                {#                            </fieldset>#}
+                {#                            &nbsp;#}
+                {#                            <fieldset class="col-md-12">#}
+                {#                                {{ form.copy.errors }}#}
+                {##}
+                {#                            </fieldset>#}
+                {#                            <br>#}
+                {#                            <input type="submit" class="btn btn-success" value="Отправить сообщение"/>#}
+                {#                        </form>#}
+                <div class=" col-md-offset-4 ">
+                    <div class="row contact-form">
+                        <form action="{% url 'contact' %}" method="post">{% csrf_token %}
+                            {{ form.non_field_errors }}
+                            <div>
+                                <fieldset class="col-lg-7 col-md-1 col-sm-4 col-xs-12">
+                                    <label for="id_subject">Телефон:</label>
+                                    {{ form.subject.errors }}
+                                    {{ form.subject }}
+                                    <input class="form-control" id="id_subject" name="subject"
+                                           placeholder="Ваш номер телефона...">
+                                </fieldset>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div>
+                                <fieldset class="col-lg-7 col-md-1 col-sm-4 col-xs-12">
+                                    <label for="id_sender">E-mail:</label>
+                                    {{ form.sender.errors }}
+                                    {{ form.sender }}
+                                    <input class="form-control" id="id_sender" name="sender"
+                                           placeholder="Ваш e-mail...">
+                                </fieldset>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div>
+                                <fieldset class="col-md-7">
+                                    <label for="id_message">Сообщение:</label>
+                                    {{ form.message.errors }}
+                                    {{ form.message }}
+                                    <textarea class="form-control" id="id_message" name="message"
+                                              placeholder="Введите ваше имя и удобное время для звонка"></textarea>
+                                </fieldset>
+                            </div>
+                            <div>
+                                <fieldset class="col-md-7">
+                                    {{ form.copy.errors }}
+
+                                </fieldset>
+
+                            </div>
+                            <fieldset class="col-md-7">
+                                <input type="submit" class="btn btn-success" value="Отправить сообщение"/>
+                            </fieldset>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div> <!-- /.contact-form -->
+
+        </div> <!-- /.col-md-6 -->
+    </div> <!-- /.row -->
+
+    {#    <div id="products" class="content-section">#}
+    {#       <div class="container">#}
+    {#            <div class="row">#}
+    {#                <div class="col-md-12 text-center">#}
+    {#                    <h1 class="section-title">Продукция</h1>#}
+    {#                </div> <!-- /.col-md-12 -->#}
+    {#            </div> <!-- /.row -->#}
+    {#            <div class="row">#}
+    {#                <div class="col-md-2 col-sm-3">#}
+    {#                </div> <!-- /.col-md-2 -->#}
+    {#                <div class="col-md-8 col-sm-6">#}
+    {#                    <div class="item-large">#}
+    {#                        <img src="{% static "images/promotion/promotion2.jpg" %}" alt="Product 2">#}
+    {#                        <div class="item-large-content">#}
+    {#                            <div class="item-header">#}
+    {#                                <h2 class="pull-left">Европейский производитель!</h2>#}
+    {#                                <div class="clearfix"></div>#}
+    {#                            </div> <!-- /.item-header -->#}
+    {#                            <p>Натяжные потолки – одно из универсальных решений для выравнивания кривого потолка, придания ему эстетичного внешнего вида при угрозе постоянных протеканий и просто красивый элемент интерьера.Этот вид отделки приобретает все большее распространение: если раньше материалы для него выпускали только за границей, то теперь производство налажено и в России. Но, не смотря на это, лидером рынка натяжных потолков остаются европейские производители, заслужившие хорошую репутацию безупречным качеством, инновациями и стремлением к экологически чистым технологиям.#}
+    {#</p>#}
+    {#                        </div> <!-- /.item-large-content -->#}
+    {#                    </div> <!-- /.item-large -->#}
+    {#                </div> <!-- /.col-md-8 -->#}
+    {#                <div class="col-md-2 col-sm-3">#}
+    {#                </div> <!-- /.col-md-2 -->#}
+    {#            </div> <!-- /.row -->#}
+    {#        </div> <!-- /.container -->#}
+    {#    </div> <!-- /#products -->#}
+    <div id="products" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="section-title">Наши работы</h1>
+                </div> <!-- /.col-md-12 -->
+            </div> <!-- /.row -->
+
+        </div> <!-- /.container -->
+    </div> <!-- /#products -->
+    <div class="back-gallery">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 ">
+
+                    <div class="cssbox">
+                        <a id="image1" href="#image1">
+                            <img class="cssbox_thumb" src="{% static 'images/gallery/thumb1.jpg' %}">
+                            <span class="cssbox_full"><img src="{% static 'images/gallery/potol1.jpg' %}"></span>
+                        </a>
+                        <a class="cssbox_close" href="#products"></a>
+                        <a class="cssbox_next" href="#image2">&gt;</a>
+                        <a class="cssbox_prev" href="#image10">&lt;</a>
+
+
+                    </div>
+
+                    <div class="cssbox">
+                        <a id="image2" href="#image2">
+                            <img class="cssbox_thumb" src="{% static 'images/gallery/thumb2.jpg' %}">
+                            <span class="cssbox_full"><img src="{% static 'images/gallery/potol2.jpg' %}"></span>
+                        </a>
+                        <a class="cssbox_close" href="#products"></a>
+                        <a class="cssbox_next" href="#image3">&gt;</a>
+                        <a class="cssbox_prev" href="#image1">&lt;</a>
+
+                    </div>
+
+                    <div class="cssbox">
+                        <a id="image3" href="#image3">
+                            <img class="cssbox_thumb" src="{% static 'images/gallery/thumb3.jpg' %}">
+                            <span class="cssbox_full"><img src="{% static 'images/gallery/potol3.jpg' %}"></span>
+                        </a>
+                        <a class="cssbox_close" href="#products"></a>
+                        <a class="cssbox_next" href="#image4">&gt;</a>
+                        <a class="cssbox_prev" href="#image2">&lt;</a>
+                    </div>
+                    <div class="cssbox">
+                        <a id="image4" href="#image4">
+                            <img class="cssbox_thumb" src="{% static 'images/gallery/thumb4.jpg' %}">
+                            <span class="cssbox_full"><img src="{% static 'images/gallery/potol4.jpg' %}"></span>
+                        </a>
+                        <a class="cssbox_close" href="#products"></a>
+                        <a class="cssbox_prev" href="#image3">&lt;</a>
+                        <a class="cssbox_next" href="#image5">&gt;</a>
+                    </div>
+                    <div class="cssbox">
+                        <a id="image5" href="#image5">
+                            <img class="cssbox_thumb" src="{% static 'images/gallery/thumb5.jpg' %}">
+                            <span class="cssbox_full"><img src="{% static 'images/gallery/potol5.jpg' %}"></span>
+                        </a>
+                        <a class="cssbox_close" href="#products"></a>
+                        <a class="cssbox_prev" href="#image4">&lt;</a>
+                        <a class="cssbox_next" href="#image6">&gt;</a>
+                    </div>
+                    <div class="cssbox">
+                        <a id="image6" href="#image6">
+                            <img class="cssbox_thumb" src="{% static 'images/gallery/thumb6.jpg' %}">
+                            <span class="cssbox_full"><img src="{% static 'images/gallery/potol6.jpg' %}"></span>
+                        </a>
+                        <a class="cssbox_close" href="#products"></a>
+                        <a class="cssbox_prev" href="#image5">&lt;</a>
+                        <a class="cssbox_next" href="#image7">&gt;</a>
+                    </div>
+                    <div class="cssbox">
+                        <a id="image7" href="#image7">
+                            <img class="cssbox_thumb" src="{% static 'images/gallery/thumb7.jpg' %}">
+                            <span class="cssbox_full"><img src="{% static 'images/gallery/potol7.jpg' %}"></span>
+                        </a>
+                        <a class="cssbox_close" href="#products"></a>
+                        <a class="cssbox_prev" href="#image6">&lt;</a>
+                        <a class="cssbox_next" href="#image8">&gt;</a>
+                    </div>
+                    <div class="cssbox">
+                        <a id="image8" href="#image8">
+                            <img class="cssbox_thumb" src="{% static 'images/gallery/thumb8.jpg' %}">
+                            <span class="cssbox_full"><img src="{% static 'images/gallery/potol8.jpg' %}"></span>
+                        </a>
+                        <a class="cssbox_close" href="#products"></a>
+                        <a class="cssbox_prev" href="#image7">&lt;</a>
+                        <a class="cssbox_next" href="#image9">&gt;</a>
+                    </div>
+                    <div class="cssbox">
+                        <a id="image9" href="#image9">
+                            <img class="cssbox_thumb" src="{% static 'images/gallery/thumb9.jpg' %}">
+                            <span class="cssbox_full"><img src="{% static 'images/gallery/potol9.jpg' %}"></span>
+                        </a>
+                        <a class="cssbox_close" href="#products"></a>
+                        <a class="cssbox_prev" href="#image8">&lt;</a>
+                        <a class="cssbox_next" href="#image1">&gt;</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
